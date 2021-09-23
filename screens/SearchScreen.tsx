@@ -4,7 +4,7 @@ import { Colors } from '../assets/Colors';
 import { TopBarEdgeWaves } from '../components/TopBarEdgeWaves';
 
 import { RootStackScreenProps } from '../types';
-export default function SearchScreen({ navigation }: RootStackScreenProps<'NotFound'>) {
+export default function SearchScreen({ navigation }: RootStackScreenProps<'Search'>) {
   return (
     <View style={styles.container}>
       <TopBarEdgeWaves wavePosition="top" />
