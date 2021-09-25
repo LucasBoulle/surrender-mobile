@@ -14,6 +14,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
+import PlayScreen from '../screens/PlayScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import SearchScreen from '../screens/SearchScreen';
 import TabOneScreen from '../screens/TabOneScreen';
@@ -40,6 +41,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator>
+      <Stack.Screen name="Play" component={​PlayScreen}​ options={​{​headerShown: false}​}​/>
       <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: false}}/>
       <Stack.Screen name="Search" component={SearchScreen} options={{headerShown: false}}/>
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />

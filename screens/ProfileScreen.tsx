@@ -38,7 +38,7 @@ export default function PofileScreen({ navigation }: RootStackScreenProps<'Profi
                 <Avatar
                     containerStyle={styles.avatar}
                     avatarStyle={{ borderRadius: 100 }}
-                    source={require('../assets/images/profile-icon.png')}
+                    source={require('../assets/images/profile-icon.jpg')}
                 />
                 <View style={styles.matchInfoCardView}>
                     <Text style={styles.infoMatchCard}>Riven</Text>
