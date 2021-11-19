@@ -12,6 +12,7 @@ import { ColorSchemeName, Pressable } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+import ItemizationScreen from '../screens/ItemizationScreen';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import PlayScreen from '../screens/PlayScreen';
@@ -41,9 +42,10 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Play" component={​PlayScreen}​ options={​{​headerShown: false}​}​/>
-      <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: false}}/>
       <Stack.Screen name="Search" component={SearchScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Play" component={PlayScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Itemization" component={ItemizationScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown: false}}/>
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
